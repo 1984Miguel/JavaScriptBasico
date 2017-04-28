@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+		alert("Te voy a pedir un numero y despues sumare hasta lodos los numeros hasta ese numero")
+
+		var num, str="la operacion es :", acu=0;
+
+		while (isNaN(num))
+		 {
+			num=parseInt(prompt("Dame el numero"));
+		}
+
+		for (x=1;x<=num;x++)
+			{
+				str +=x;
+				str +="+";
+				acu +=num;
+
+			}	
+			// asi quito un + que me salia al final
+			alert(str.substring(0, str.length-1) + "="+ acu);
+
+
+		</script>
+	</head>
+	<body>
+	</body>
+<html>

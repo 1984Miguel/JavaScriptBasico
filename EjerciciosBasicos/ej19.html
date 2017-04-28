@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+
+			alert("Te voy a pedir 10 numero y solo te mostrare los pares")
+
+
+			var cont=0, aux=0; var str=""
+			var arr= new Array();
+
+				while (cont<=9) {
+					aux= parseInt(prompt("Dame el numero " + (cont+1)));
+						
+						if (!isNaN(aux))
+						{
+							arr[cont]=aux
+							cont++
+						}
+				}
+
+
+				for (x=0; x<=9;x++)
+				{
+					if(arr[x]%2==0)
+					{
+						str += arr[x];
+						str += " ";
+
+					}
+
+				}	
+
+			alert(str)	
+
+
+		</script>
+	</head>
+	<body>
+	</body>
+<html>
