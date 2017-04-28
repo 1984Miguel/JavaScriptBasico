@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+
+		function pedir(z)
+		{
+			var n;
+			while ((n<0 || n>20)|| isNaN(n))
+			{
+				n = parseInt(prompt("dame " + z + " numero"));
+			}
+			return n;
+		}
+
+		alert("Dame dos valores entre 1 y 20 y te mostrare si son valores validos")
+		var valores= [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,,16,17,18,19,10];
+		var x ,y, aux ="";
+		var valor1=pedir("primer");
+		var valor2=pedir("segundo");
+
+		if (valor1<valor2)
+		{
+			x= valor1;
+			y= valor2;
+		}
+		else
+		{
+			x= valor2;
+			y=valor1;
+		}	
+
+		for (var i =x; i<=y;i++)
+			{
+				aux+= valores[i-1] ;
+				aux+= " "
+			}
+
+			alert(aux);
+
+		</script>
+	</head>
+	<body>
+	</body>
+<html>
