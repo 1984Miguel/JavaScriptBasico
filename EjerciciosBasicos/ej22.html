@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+
+		alert("Te pedire nombre y edad de 5 personas y despues te dire cuales tienen derecho a voto")
+		var aux="Tienen derecho a voto: ", dat , pos;
+
+		for (x=0;x<5;x++)
+		{
+			dat =prompt("Dame el nombre y la edad de la persona " +(x+1)+ " \n En formato Nombre numero");
+			;
+			pos= dat.search(" ");
+			if(parseInt(dat.substring(pos+1),dat.length)>18);
+			{
+				aux += (dat.substring(0, pos-1) + " ")	;	
+			}
+
+		}
+		alert(aux);
+
+
+		</script>
+	</head>
+	<body>
+	</body>
+<html>
