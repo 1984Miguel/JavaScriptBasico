@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+		alert("Te voy a pedir el nombre de 3 alumnos con 3 notas y te mostrare la media de todos ellos");
+
+		var cali,aux, dic =  new Array(), str="";
+
+		for (var x=0; x<3;x++)
+		{
+			 var araux=  new Array()
+		
+			cali=prompt("Dame el nombre y 3 notas del alumno"+ (x+1)+
+				"\n Formato: Nombre_Completo valor1, valor2, valor3");
+
+			
+			araux = cali.split(" ");
+
+			araux[1]= parseInt(araux[1].substring(0,araux[1].length-1 )); 
+			araux[2]= parseInt(araux[2].substring(0,araux[2].length-1 ));
+			araux[3]= parseInt(araux[3]);
+
+			
+			dic[araux[0]]=parseInt((araux[1]+araux[2]+araux[3])/3);
+			
+		}	
+
+		for (var key in dic) {
+   			 str += (key + ": " + dic[key] + "\n");
+   			
+		}
+		alert(str);
+		 console.log(str);
+		
+		
+		</script>
+	</head>
+	<body>
+	</body>
+<html>
