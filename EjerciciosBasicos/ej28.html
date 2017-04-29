@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+
+		function inicio () {
+			
+		alert("Camos a pintar un rectangulo");
+		var lados= prompt("Dame el numero de lados");
+		var figura= prompt("Dame la figura");
+
+
+		var resulc=(pintar(lados, figura, "\n"));
+
+		var resulh=(pintar(lados, figura, "<br />"));
+
+		console.log(resulc);
+
+		document.getElementById("visu").innerHTML = resulh;
+		}
+
+		function pintar(lad, fig, sal) {
+			var aux="";
+			for (x=1 ;x<=lad;x++)
+			{
+				for (y=1; y<=lad;y++)
+
+					if(x==1 || y==1 || x==lad || y ==lad)
+					{
+						aux+=fig;
+					}
+					else
+					{
+						aux+= ".";
+					}	
+					aux += sal;
+
+
+			}
+		return aux;
+
+		}
+
+		</script>
+	</head>
+	<body onload="inicio()">
+	<div id="visu"> </div>
+	</body>
+<html>

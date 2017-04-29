@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+
+		alert("Voy a pensar un numero del 1 al 100 tendras 5 oportunidades de adivinarlo")
+
+		var num =Math.floor(Math.random() * (100 - 1)) + 1;
+		console.log(num);
+		var enc=false, acu =4, aux;
+
+		while (!enc && acu>=0) {
+			aux=prompt("Dame un numero");
+
+			if(aux==num)
+			{
+				alert("Felicidades, has acertado el numero");
+				enc= true;
+			}
+			else if (aux>num)
+			{
+			alert("Intenta con un numero menor (te quedan "+ acu + " oportunidades)");
+			acu--;
+			}	
+			else 
+			{
+			alert("Intenta con un numero mayor  (te quedan "+ acu + " oportunidades)");
+			acu--;	
+			}
+		}
+
+
+		if(!enc)
+		{
+			alert("se acabo el juego el numero es " + num)
+		}
+
+
+		</script>
+	</head>
+	<body>
+	</body>
+<html>

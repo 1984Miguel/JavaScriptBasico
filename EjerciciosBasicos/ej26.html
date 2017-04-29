@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+
+		function pintarFila() {
+			var filas =prompt("Dame numero de filas");
+			var tab = "<table border= \'1\'>";
+
+			for (x=1;x<=filas;x++)
+			{
+				tab += "<tr><td>Fila numero "+ x +"</td><tr>";
+			}
+			tab += "</table>";
+			document.getElementById("tabla").innerHTML = tab;
+
+		}
+
+
+		</script>
+	</head>
+	<body onload="pintarFila()">
+
+	<div id="tabla"></div>
+	</body>
+<html>

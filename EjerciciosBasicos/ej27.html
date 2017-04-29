@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+
+		function es_palindromo (texto) {
+			
+			var ini=0 , final=(texto.length-1), palin= true;
+			texto= texto.toLowerCase().trim();
+
+			while (ini<final && palin) {
+				console.log("entra " + texto.charAt(ini)+ "//" +texto.charAt(final));
+
+				while (texto.charAt(ini) == " ") {
+					ini++;
+				}
+
+				while (texto.charAt(final) == " ") {
+					final--;
+				}
+
+				if(!(texto.charAt(ini)==texto.charAt(final)))
+				{
+				palin = false;
+				}
+
+				ini++;
+				final--;
+			}
+
+
+			return palin;
+
+		}
+
+
+
+
+		alert("vamos a buscar frases palindromas");
+		var aux=prompt("Dame la frase");
+	 	var es= es_palindromo(aux);
+
+	 	es?alert("Es palindromo"):alert("No es palindromo");
+
+
+
+		</script>
+	</head>
+	<body>
+	</body>
+<html>
