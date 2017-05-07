@@ -1,8 +1,13 @@
 <html>
 	<head>
 		<title></title>
-		<<script>
-			var euros= prompt("dame una cantidad en € y te la mostrare em $");
+		<script>
+			var euros;
+			while (isNaN(euros) || euros < 0 ) {
+				euros= parseFloat(prompt("dame una cantidad en Euros y te la mostrare em $"));
+			}
+			
+
 			alert(euros +"Euros quivalen a " +(euros*1.06)+"$")
 
 		</script>
