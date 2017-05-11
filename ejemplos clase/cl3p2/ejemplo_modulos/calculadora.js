@@ -1,5 +1,8 @@
 "use strict"
 
+console.log("Estamos en el aire");
+console.log("ya esta");
+
 function suma(a,b)
 {
     return a+b;

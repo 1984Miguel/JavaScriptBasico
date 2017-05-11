@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title></title>
+		<script>
+            "use strict"
+
+            function refresco(ref){
+                switch(ref)
+                {
+                case 1: return "Fanta";break;
+                case 2: return  "Pepsi"; break;
+                case 3: return  "7Up"; break;
+            }
+            }
+
+            alert("vamos a simular una maquina expendedora de refrescos")
+
+            let refr=0, monedas=0, aux=0;
+             const precio=1, acepta ="0.10 0.20 0.50 1";
+             console.log(acepta);
+
+            while(refr!==1 && refr!==2 && refr!==3)
+            {
+            refr=parseInt(prompt("dame el refresco que deseas \n 1) Fanta \n 2) Pepsi \n 3) 7up"));
+            }
+
+            console.log("has elegido: ", refresco(refr) , " con un coste de : ", precio , " Euros");
+
+            while (monedas<=precio)
+            {
+                do{
+                 aux= parseFloat(prompt("Introduce monedas"));
+                }while(aux!==0.1 && aux!==0.2 &&aux!==0.5 && aux!==1);
+
+                monedas+=aux
+                console.log(monedas);
+            }
+
+            alert("Tienes tu ", refresco(refr) , "tu cambio es de", (monedas-precio) )
+
+            
+
+
+
+
+		</script>
+	</head>
+	<body>
+	</body>
+<html>
